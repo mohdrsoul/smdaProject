@@ -1,0 +1,337 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models.Blocks;
+@using Umbraco.Cms.Core.Models;
+
+
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - هيئة تنمية المؤسسات الصغيرة والمتوسطة</title>
+    <!-- تضمين Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">  
+    <link rel="stylesheet" href="css/animate.css">
+
+
+<style>
+    #section1 {
+    background-image: url('img/background1.png');
+}
+</style>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <div class="row">
+            <div id="section1" class="col-md-8">
+                <!-- الكود الخاص بالقسم الأول هنا -->
+                <header class="container-fluid">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="@Model.Value("sme")" class="logo" alt="شعار الهيئة">
+                        </div>
+                        <div class="col-2">
+                            <img src="@Model.Value("oman40")" class="vision-h" alt="2040">
+                        </div>
+                        <div class="col-8">
+                            <nav class="navbar navbar-expand-lg navbar-light">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="home.html">الرئيسية</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                عن الهيئة
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                                <li><a class="dropdown-item" href="/about">من النطق السامي</a></li>
+                                                <li><a class="dropdown-item" href="#">كلمة سعادة رئيس الهيئة</a></li>
+                                                <li><a class="dropdown-item" href="#">اختصاصات الهيئة</a></li>
+                                                <li><a class="dropdown-item" href="#">رؤيتنا رسالتنا قيمنا</a></li>
+                                                <li><a class="dropdown-item" href="/rules-regulation">القوانين والتشريعات</a></li>
+                                                <li><a class="dropdown-item" href="/Classification-institutions">تصنيف المؤسسات</a></li>
+                                                <li><a class="dropdown-item" href="#">منظومة ريادة الأعمال</a></li>
+                                                <li><a class="dropdown-item" href="/community">المشاركة المجتمعية</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                الخدمات
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                                <li><a class="dropdown-item" href="#">خدمات بطاقة ريادة الأعمال</a></li>
+                                                <li><a class="dropdown-item" href="#">خدمة الطلبات والمقترحات</a></li>
+                                                <li><a class="dropdown-item" href="#">خدمات الحاضنات</a></li>
+                                                <li><a class="dropdown-item" href="#">خدمات التدريب</a></li>
+                                                <li><a class="dropdown-item" href="#">خدمات استشارية عامة وتخصصية</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">خدمات برنامج التوجيه</a></li>
+                                                <li><a class="dropdown-item" href="#">خدمات الدعم الحرفي</a></li>
+                                                <li><a class="dropdown-item" href="#">المصادر التمويلية</a></li>
+                                                <li><a class="dropdown-item" href="#">خدمات الأراضي بحق الانتفاع</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">الإمتياز التجاري</a></li>
+                                                <li><a class="dropdown-item" href="#">برنامج جاهزية رائد العمل</a></li>
+                                                <li><a class="dropdown-item" href="#">خدمات التسويق وترويج المنتجات</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">رؤيتنا رسالتنا قيمنا</a></li>
+                                                <li><a class="dropdown-item" href="#">خدمات دعم و تطوير أعمال
+                                                        المشاريع</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                البرامج والمبادرات
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                                <li><a class="dropdown-item" href="programs.html">البرامج و
+                                                        المبادرات</a></li>
+                                                <li><a class="dropdown-item" href="#">مراكز سند للخدمات</a></li>
+                                                <li><a class="dropdown-item" href="#">الرعايات</a></li>
+                                                <li><a class="dropdown-item" href="#">ملتقى الاستثمار</a></li>
+                                                <li><a class="dropdown-item" href="#">الدعم الحرفي</a></li>
+                                                <li><a class="dropdown-item" href="#">منصات فرص الأعمال وتسجيل
+                                                        الموردين</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                المركز الإعلامي
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                                                <li><a class="dropdown-item" href="#">أحداث وفعاليات</a></li>
+                                                <li><a class="dropdown-item" href="#">المرئيات</a></li>
+                                                <li><a class="dropdown-item" href="#">الاصدارات</a></li>
+                                                <li><a class="dropdown-item" href="#">آخر الأخبار</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                تواصل معنا
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                                                <li><a class="dropdown-item" href="#">الأسئلة الأكثر شيوعًا</a></li>
+                                                <li><a class="dropdown-item" href="#">الاستفسار</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <div class="row">
+                    <div class="col-6 mt-5">
+                        <h4>@Umbraco.GetDictionaryValue("Learn about our services")</h4>
+                    </div>
+                     <div class="col-6 mt-5">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-transparent border-0" id="button-addon2">
+                                </span>
+                            </div>
+                            <input type="text"
+                                class="form-control rounded-pill bg-transparent border border-white text-white pr-5 ms-n5"
+                                placeholder="   اكتب ما تبحث عنه" aria-label="Recipient's username"
+                                aria-describedby="button-addon2">
+                        </div>
+                    </div>
+                    <div class="col-12 ms-auto home-contant">
+                        <a href="#" class="btn round-link-button">@Umbraco.GetDictionaryValue("Entrepreneurship card")<svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                            </svg></a>
+                        <a href="#" class="btn round-link-button">@Umbraco.GetDictionaryValue("Requests and suggestions") <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                            </svg></a>
+                        <a href="#" class="btn round-link-button">@Umbraco.GetDictionaryValue("Incubator services") <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                            </svg></a>
+                    </div>
+                    <div class="col-12 home-contant2">
+                        <a href="#" class="btn round-link-button">@Umbraco.GetDictionaryValue("all services") <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                            </svg></a>
+                    </div>
+                    <div class="col-12 mt-4 section1footer-img">
+                        <img src="img/section1footer.svg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div id="section2" class="col-md-2">
+                <!-- الكود الخاص بالقسم الثاني هنا -->
+                <div class="section2-programs">
+                    <a href="#"><img class="header-4icon" src="img/cookies.svg"></a>
+                    <a href="#"><img class="header-4icon" src="img/changebackground.svg"></a>
+                    <a href="#"><img class="header-4icon" src="img/fontsize.svg"></a>
+                    <a href="#"><img class="header-4icon" src="img/language.svg"></a>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center section3-info">
+                   <h5 >@Umbraco.GetDictionaryValue("learn about")  <br> @Umbraco.GetDictionaryValue("Programs and initiatives")<br> </h5>
+
+                    </div>
+
+                    <div class="col-12 text-center mt-3">
+                     <a href="/programs" class="btn round-link-button float-right">اكتشف الآن<svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                            </svg></a>
+
+                    </div>
+                </div>
+            </div>
+            <div id="section3" class="col-md-2">
+                <!-- الكود الخاص بالقسم الثالث هنا -->
+                <div class="electronic-services">
+                    <a class="electronic-services-a" href="@Model.Value("electronicServicesPage")">الخدمات الالكترونية</a>
+                </div>
+                <div class="col-12 text-center info-data ">
+                     <h5 >@Umbraco.GetDictionaryValue("learn about")<br>والمعلومات</h5>
+                </div>
+                <div class="col-12 text-center mt-4">
+                     <a href="/data" class="btn round-link-button float-right"> @Umbraco.GetDictionaryValue("Find out now")<svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                        </svg></a>
+                </div>
+                <!--- 3 Button with 3 different size ---->
+                <div class="icon3">
+                    <a href="#">
+                        <img class="notification" src="img/notification.svg"
+                            onmouseover="this.style.transform = 'rotate(3deg)';"
+                            onmouseout="this.style.transform = 'rotate(0deg)';">
+                    </a>
+                    <a href="#">
+                        <img class="ads" src="img/ads.svg" onmouseover="this.style.transform = 'rotate(3deg)';"
+                            onmouseout="this.style.transform = 'rotate(0deg)';">
+                    </a>
+                    <a href="#">
+                        <img class="hand" src="img/hand.svg" onmouseover="this.style.transform = 'rotate(3deg)';"
+                            onmouseout="this.style.transform = 'rotate(0deg)';">
+                    </a>
+                </div>
+            </div>
+            <img src="img/line.svg" class="line-header">
+            <div>
+            </div>
+        </div>
+    </section>
+       <section id="partners" class="container p-2">
+        <div class="row">
+            <div class="col-12 text-center mt-1 section2-title">
+                <h2>الشركاء الاستراتيجيون</h2>
+            </div>
+           @await Html.PartialAsync("slide")
+        </div>
+    </section>
+    <footer class="text-center  footer-bg">
+        <div class="footer-text">
+            <div class="row row-cols-1 row-cols-lg-3 ">
+                <div class="col">
+                    <div class=" bd-highlight"> @Umbraco.GetDictionaryValue("Connect with us")</div>
+                    <div class="bd-highlight">
+                        <div class="d-flex flex-row bd-highlight justify-content-center">
+                           <div class="p-1 bd-highlight">
+                            <a href="@Model.Value("xAccount")">
+                                <img src="img/x.svg" alt="">
+                            </a>
+                            </div>
+                            
+                            <div class="p-1 bd-highlight">
+                            <a href=@Model.Value("instgram")">
+                                <img src="img/instagram.svg" alt="">
+                            </a>
+                            </div>
+                            
+                            <div class="p-1 bd-highlight">
+                            <a href="@Model.Value("youtube")">
+                                <img src="img/youtube.svg" alt="">
+                            </a>
+                            </div>
+                          <div class="p-1 bd-highlight">
+                                <a href="mailto:@Model.Value("email")">
+                                    <img src="img/email.svg" alt="">
+                                </a>
+                            </div>
+                            
+                                                        
+                            <div class="p-1 bd-highlight">
+                                <img src="img/phone.svg" alt="">
+                            </div>
+                            <div class="p-1 bd-highlight">
+                                @Model.Value("contactPhone")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footer-sme-text ">
+                    <div class=" bd-highlight">@Umbraco.GetDictionaryValue("all rights are save")   @Model.Value("text1") © @DateTime.Now.Year <br></div>
+                    <div class=" bd-highlight">@Umbraco.GetDictionaryValue("The Small and Medium Enterprises Development Authority") </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center ">
+                    <div class=" bd-highlight">
+                        <a class="navbar-brand" href="#">
+                            <img src="@Model.Value("oman40")" height="50">
+                        </a>
+                    </div>
+                    <div class="p-1 bd-highlight">
+                        <a class="navbar-brand" href="#">
+                            <img src=@Model.Value("sme") height="50">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="Scripts/data.js"></script>
+    <script src="Scripts/color.js"></script>
+
+
+
+
+
+</body>
+
+</html>

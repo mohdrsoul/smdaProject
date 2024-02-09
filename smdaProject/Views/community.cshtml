@@ -1,0 +1,45 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Community>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "masterAbout.cshtml";
+     var about = Umbraco.Content(1125);
+	 var home = Umbraco.Content(1100);
+
+}
+
+
+    <section class="">
+        <div class="container  container2">
+            <div class="d-flex flex-row bd-highlight mb-3 position-absolute">
+                <div class="p-3 bd-highlight ">
+                    <img src="assets/img/share.svg" class="cursor" alt="">
+                </div>
+                <div class="p-3 bd-highlight">
+                    <img src="assets/img/printer.svg" class="cursor" alt="">
+                </div>
+            </div>
+            <h6 class="card-title d-flex justify-content-center mb-5  title-community">
+                    @Umbraco.GetDictionaryValue("Community participation")   
+                    <div class=" justify-content-center position-absolute dot-pic2">
+                    <div class="d-flex flex-row bd-highlight mb-auto d-flex justify-content-center ">
+                        <div class="p-2 bd-highlight ">
+                            <img src="assets/img/Dot.svg"  alt="" >
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <img src="assets/img/Dot.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </h6>
+            <div class="card border-card m-30 mb-5">
+                <div class="card-body-text">
+                    <h4 class="card-title mt-4 bg-light d-flex rounded-pill">
+                       @Model.Value("communityParticipationTitle")</h4>
+                    <h6 class="text-muted card-subtitle mb-5 mt-5 bg-lightbeige rounded-3">مقدمة</h6>
+                    <p class="about-community">
+@Model.Value("bodyOfCommunityParticipation")                    </p>
+                </div>
+            </div>
+        </div>
+    </section>   

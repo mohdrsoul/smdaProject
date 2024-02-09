@@ -1,0 +1,321 @@
+
+.dot-Classification{
+    z-index: -1;
+    padding: 0px 392px 0 0;
+    top: 87px;
+}
+.Classification-income {
+    position: relative;
+    left: 25%;
+    background: #E7EEF8;
+}
+.worker-num {
+    position: relative;
+    left: 26%;
+    background: #E7EEF8;  
+}
+
+.container-fluid {
+    direction: rtl;
+}
+
+.form-info{
+    display: flex;width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: -23% !important;
+}
+.pic-Institutions {
+    width: 200px;
+    height: 227px;
+}
+.data-know{
+    background: var(--light-brown, #AA9767);
+    color: var(--White, var(--White, #FFF));
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    width: fit-content;
+    padding: 0 16px 1px 9px;
+}
+.Classification-title {
+    color: #004876;
+    text-align: center;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+.about-classification{
+    border-radius: 6px;
+    background: var(--light-beige, #EEEAE1);
+    color: var(--light-brown, #AA9767);
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 6px 20px 2px 13px;
+}
+.pic-Institutions {
+    width: 200px;
+    height: 227px;
+}
+.button-clssification {
+    background-color: #004876;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: rgba(1, 60, 136, .5) 0 -1px 3px 0 inset, rgba(0, 44, 97, .1) 0 3px 6px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inherit;
+    font-family: "Helvetica Neue LT Arabic";
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    min-height: 43px;
+    min-width: 120px;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+.button-clssification:hover {
+    background-color: #238DC1;
+    transform: translateY(-2px);
+}
+.small-company {
+    position: relative;
+    left: 22%;
+    color: var(--light-brown, #AA9767);
+    text-align: center;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+.small-company2 {
+    position: relative;
+    left: 12%;
+    color: var(--light-brown, #AA9767);
+    text-align: center;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+.small-company3 {
+    position: relative;
+    left: 11%;
+    color: var(--light-brown, #AA9767);
+    text-align: center;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+.small-company4 {
+    position: relative;
+    left: 22%;
+    color: var(--light-brown, #AA9767);
+    text-align: center;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+.small-company5 {
+    position: relative;
+    left: 18%;
+    display: contents;
+    color: var(--light-brown, #AA9767);
+    text-align: center;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+.small-company6 {
+    color: var(--light-brown, #AA9767);
+    text-align: center;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    position: relative;
+    left: 28px;
+}
+
+.data-know {
+    width: max-content;
+    margin-right: -204px;
+}
+.card-body-classification{
+    direction: rtl;
+    padding: 0rem 12rem;   
+}
+.contant-margin{
+    margin: -34px 0px 2px 0px;
+}
+.label-clssification {
+    display: inline-block;
+    padding: 5px 28px 6px 24px;
+    border-radius: 25px;
+    background: var(--light-sky, #E7EEF8);
+    color: var(--Dark-Blue, #004876);
+    text-align: center;
+    font-family: "Helvetica Neue LT Arabic";
+    font-size: large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 33px */
+}
+/* Tablet styles */
+@media screen and (max-width: 992px) {
+
+    .vision-message {
+        width: 89%;
+        gap: 37px;
+        position: relative;
+        left: -1%;
+    }
+    /* community */
+    .title-community {
+        font-size: 40px;
+        width: auto;
+    }
+    
+}
+/* Phone styles */
+@media screen and (max-width: 768px) {
+
+    .header-icon {
+        margin-top: 20px;
+        margin-right: -128px !important;
+        display: block;
+        position: absolute;
+    }
+    .electronic-services {
+        margin-right: 16px !important;
+    }
+
+    /* classficition */
+    .pic-Institutions {
+        width: auto; 
+        height: auto; 
+        display: block;
+    }
+    .data-know {
+        width: max-content;
+        margin-right: -166px;
+    }
+    .label-clssification {
+        display: inline-block;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 10px 5px 10px;
+        margin: 5px;
+    }
+    .row.justify-content-evenly {
+        gap: 84px;
+        display: flex;
+        margin-right: -138px;
+    }
+    .row.justify-content-end {
+        display: flex;
+        width: max-content;
+    }
+    .Classification-title {
+        text-align: end;
+        font-size: 28px;
+        position: relative;
+        left: 0px;
+        top: 16px;
+    }
+    .worker-num {
+        margin-left: auto;
+    }
+
+    input#inputText1 {
+        width: auto;
+    }
+    input#inputText2 {
+        width: auto;
+    }
+    .submit {
+        position: relative;
+        left: 165px;
+    }
+}
+@media (min-width: 768px) {
+    .pic-Institutions {
+        width: 211px;
+        height: 287px;
+        margin-right: 27px;
+        margin-top: -23px;
+    }
+
+    .button-61 {
+        padding: 4px 13px;
+        width: auto;
+        min-width: 118px;
+    }
+    .about-classification {
+        font-size: 20px;
+    }
+    .know-more {
+        margin-right: -157px;
+        width: 601px;
+    }
+
+}
+@media screen and (max-width: 576px) {
+ 
+    .header-icon {
+        margin-top: 20px;
+        margin-right: -116px !important;
+        display: block;
+        position: absolute;
+    }
+    .electronic-services {
+        margin-right: 16px !important;
+    }
+    /* classification */
+    .about-classification {
+        font-size: 16px;
+    }
+    .know-more {
+        margin-right: -168px;
+        width: max-content;
+    }
+    .cursor {
+        cursor: pointer;
+        width: 85%;
+        position: relative;
+        right: 19px;
+    }
+    .button-61 {
+        font-size: 14px;
+        min-height: 32px;
+        min-width: 83px;
+    }
+
+}
+

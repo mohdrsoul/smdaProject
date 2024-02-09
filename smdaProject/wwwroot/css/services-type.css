@@ -1,0 +1,242 @@
+.services-type-title{
+    color: var(--light-brown, #AA9767);
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */ 
+}
+.bg-services-title{
+    color: var(--blue5, #006098);
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: larger;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 45px */
+    border-radius: 20px;
+    background: var(--light-sky, #E7EEF8);
+    display: block;
+}
+
+
+.list-group {
+    border-radius: 20px !important;
+}
+.card-discraption{
+    border-radius: 20px !important; 
+    width: auto !important;
+    height: 361px !important;
+}
+.p-text-body{
+    color: var(--blue5, #006098);
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+}
+.Categories-text{
+    color: var(--blue2, #4097CB);
+    font-family: Helvetica Neue LT Arabic;
+    font-size: medium;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-decoration:  underline;
+    display: block;
+}
+.card-body ol {
+    color: var(--blue5, #006098);
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: medium;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+.card-body ul {
+    color: var(--blue5, #006098);
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: medium;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+.title-details{
+    color: var(--light-brown, #AA9767);
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+    display: block;
+
+}
+.details{
+    color: var(--blue5, #006098);
+    font-family: Helvetica Neue LT Arabic;
+    font-size: large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    display: block;
+
+}
+.Commercial-Record{
+    color: var(--Dark-Blue, #004876);
+    text-align: center;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border-radius: 12px;
+    background: var(--light-sky, #E7EEF8);
+    width: 173px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.id-number{
+    color: var(--Dark-Blue, #004876);
+    text-align: center;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border-radius: 12px;
+    background: var(--light-sky, #E7EEF8);
+    width: 173px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control{
+    border-radius: 12px !important;
+    border: 1px solid var(--Dark-Blue, #004876) !important;
+    align-items: center !important;
+    font-family: Helvetica Neue LT Arabic;
+}
+.form-control::placeholder {
+    color: var(--sky, #C3D5ED) !important;
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+  }
+  .title-reasons{
+    color: var(--blue2, #4097CB);
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+  }
+.list-group-item {
+    color: #004876 !important;
+}
+.list-group-item-action:focus, .list-group-item-action:hover {
+    z-index: 1 !important;
+    color: #AA9767 !important;
+    background-color: #EEEAE1 !important;
+}
+
+/* sme-servces-discraption */
+
+
+
+/* Desktop styles */
+@media (min-width: 1200px) {
+    .title-community {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .title-community {
+        font-size: 40px;
+        width: auto;
+    }
+    .dot-pic img {
+        display: none;
+      }
+      .dot-announ{
+        display: none;
+    }
+      .header-icon {
+        margin-right: -36px !important;
+    }
+    .electronic-services {
+        margin-right: 109px !important;
+    }
+}
+/* Phone styles */
+@media (max-width: 767px) {
+
+    .title-community {
+        font-size: 30px;
+        padding: 11px 2px 0px 10px; 
+    }
+     .dot-pic img {
+        display: none;
+      }
+      .dot-announ{
+        display: none;
+    }
+    .header-icon {
+        margin-top: 20px;
+        margin-right: -128px !important;
+        display: block;
+        position: absolute;
+    }
+    .electronic-services {
+        margin-right: 16px !important;
+    }
+    .col-sm-5.col-md-3 {
+        margin-bottom: 20px;
+    }
+    .row.justify-content-between {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 500px) {
+
+    .title-community {
+        font-size: 27px;
+        padding: 5px 92px 0px 109px;
+    }
+    .dot-pic{
+        display: none;
+    }
+    .dot-announ{
+        display: none;
+    }
+    .header-icon {
+        margin-top: 20px;
+        margin-right: -116px !important;
+        display: block;
+        position: absolute;
+    }
+    .col-sm-5.col-md-3 {
+        margin-bottom: 20px;
+    }
+    .row.justify-content-between {
+        margin-bottom: 20px;
+    }
+    .card.border-card {
+        padding: 44px 72px 0px 3px;
+    }
+}
+
+
+  

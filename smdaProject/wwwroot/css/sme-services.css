@@ -1,0 +1,117 @@
+html body{
+    overflow-x: hidden;
+}
+.services-diraction{
+    direction: rtl;
+}
+.fit-cover {
+    object-fit: cover;
+  }
+ .main-title{
+    color: var(--blue5, #006098);
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 45px */
+  }
+  .text-services{
+    display: list-item;
+    color: var(--light-brown, #AA9767);
+    text-align: right;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+  }
+
+.dot-services{
+    z-index: -1;
+    padding: 0px 628px 0 0;
+    top: 78px;
+}
+.container-fluid {
+    direction: rtl;
+}
+.services-title {
+    color: #004876;
+    text-align: center;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    position: relative;
+    top: 9px;
+    margin-top: 2px;
+
+}
+.card.border-card-services {
+    border-radius: 72px;
+    border: 3px solid var(--light-brown, #AA9767);
+    padding: 44px 155px 0px 3px;
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .services-title{
+        font-size: 40px;
+        width: auto;
+    }
+    .dot-services img {
+        display: none;
+      }
+      .header-icon {
+        margin-right: -36px !important;
+    }
+    .electronic-services {
+        margin-right: 109px !important;
+    }
+}
+/* Phone styles */
+@media (max-width: 767px) {
+
+    .services-title {
+        font-size: 30px;
+        padding: 11px 2px 0px 10px; 
+    }
+     .dot-services img {
+        display: none;
+      }
+
+    .header-icon {
+        margin-top: 20px;
+        margin-right: -128px !important;
+        display: block;
+        position: absolute;
+    }
+    .electronic-services {
+        margin-right: 16px !important;
+    }
+
+}
+@media (max-width: 500px) {
+
+    .services-title {
+        font-size: 27px;
+        padding: 5px 92px 0px 109px;
+    }
+    .dot-services{
+        display: none;
+    }
+
+    .header-icon {
+        margin-top: 20px;
+        margin-right: -116px !important;
+        display: block;
+        position: absolute;
+    }
+
+    .card.border-card-services {
+        padding: 44px 75px 0px 3px;
+    }
+}
+
+
+  

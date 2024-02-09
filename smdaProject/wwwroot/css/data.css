@@ -1,0 +1,467 @@
+
+@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue+LT+Arabic:700');
+
+
+body {
+    font-family: 'Helvetica Neue LT Arabic', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+    margin-top: 0px;
+    margin-left: -10px;
+}
+
+.collapse .navbar-collapse {
+    display: black !important;
+    margin-right: -130px;
+}
+
+.header-icon {
+    margin-top: 12px;
+    margin-right: 60px !important;
+    display: block;
+    position: absolute;
+
+}
+
+/* تصميم العناصر داخل القسم الأول */
+#section1 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#section1 .icons {
+    display: flex;
+    justify-content: center;
+}
+
+#section1 .icon {
+    font-size: 30px;
+    margin: 0 20px;
+    color: #3498db;
+    text-align: center;
+}
+.our-services{
+    margin-top: 80px;
+}
+.link-know-now{
+    margin-top: 26%;
+}
+.program-title{
+    margin-top: 50px;
+}
+
+/* تصميم القسم الثاني والقسم الثالث */
+#section2,
+#section3 {
+    color: #fff;
+}
+/* تصميم خلفية القسم الثاني والقسم الثالث */
+#section2 {
+    padding-top: 10px;
+    text-align: right;
+    padding-right: 0px;
+    background-color: rgba(35, 141, 193, 1);
+}
+
+#section3 {
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgba(220, 207, 170, 1);
+    height: 551px;
+
+}
+/* تصميم خلفية القسم   الثالث */
+
+.data-know{
+    color:#238DC1;
+}
+.company-number-title{
+    color: #AA9767;
+}
+.middle-work{
+    color:#AA9767; 
+    font-weight: bold;
+}
+.number1{
+    color: #004876;
+}
+.number2{
+    color: #0275A9;
+}
+.number3{
+    color: #AA9767;
+}
+.text-edit{
+    text-align: right;
+    color:#004876;
+}
+.vactor-img{
+    width: 200px;
+}
+/* تصميم شريط الشركاء */
+#partners {
+    background-color: #ffffff;
+    /* لون خلفية شريط الشركاء */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+    margin-top: 0px;
+    margin-left: -10px;
+}
+
+.collapse .navbar-collapse {
+    display: black !important;
+    margin-right: -130px;
+}
+
+.dropdown-menu {
+    text-align: right;
+    font-size: 16px;
+
+}
+.dropdown-menu li {
+    background-color: white;
+    border-bottom: 1px solid #EEEAE1;
+}
+.dropdown-menu a {
+    color: #004876;
+}
+.header-icon {
+    margin-top: 4px;
+    margin-right: 0px !important;
+    display: flex;
+    gap: 6px;
+    position: absolute;
+}
+.electronic-services {
+    margin-top: 3px;
+    margin-right: 140px !important;
+    display: block;
+    position: absolute;
+}
+.electronic-services-d {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: right;
+    text-decoration: none;
+    font-size: large;
+ }
+div#navbarNav {
+    margin-right: -125px;
+}
+
+.vision-v {
+    height: 70px;
+    width: 120px;
+    /* margin-top: -2px; */
+    position: relative;
+    margin-right: 30px;
+    top: -5px;
+}
+
+.ms-n5 {
+    margin-left: -40px;
+}
+.round-link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #004876;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+/* Customize the circle link buttons */
+.circle-link-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+.percentage-1 {
+    color: #004876;
+    font-weight: bold;
+    position: relative;
+    left: -17px;
+    width: auto;
+}
+.percentage-2 {
+    color: #0275A9;
+    font-weight: bold;
+    position: absolute;
+    width: auto;
+    right: 57%;
+}
+#can {
+    position: relative;
+    top: -19px;
+    width: 108%;
+    height: 119%;
+    left: 27px;
+}
+
+/* Add different sizes for each circle */
+a {
+    text-decoration: none;
+    color: white;
+
+}
+.anychart-credits-text {
+    display: none;
+}
+
+.anychart-credits-logo {
+    display: none;
+}
+.split-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: block;
+    width: 93%;
+    margin-right: 32px;
+}
+.card-section {
+
+    padding: 20px;
+    border-radius: 0;
+    margin: 0;
+}
+.card-section:first-child {
+    background-color: white;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-section:last-child {
+    background-color: white;
+    color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.rounded-corners {
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    color:#004876;
+    background-color:#EEEAE1;
+}
+/* Style for circular button */
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #ffffff;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    margin-right: 11px;
+}
+
+.number1-bg {
+    background-color: #004876;
+    width: 150px;
+    height: 30px; 
+    text-align: left;
+    line-height: 10px; 
+    color: white; 
+    font-size: 15px; 
+    margin-bottom: 5px;
+}
+
+.number2-bg {
+    width: 60px;
+    background-color: #0275A9;
+    height: 30px; 
+    text-align: left;
+    line-height: 10px;
+    color: white; 
+    font-size: 15px;
+}
+
+.number3-bg {
+    width: 30px;
+    background-color: #AA9767; 
+    height: 30px;
+    text-align: left;
+    line-height: 10px; 
+    color: white; 
+    font-size: 15px; 
+    margin-bottom: 5px;
+}
+#can {
+    position: relative;
+    top: -19px;
+    width: 108%;
+    height: 119%;
+    left: 27px;
+}
+.section3-col {
+    text-align: right;
+    padding-right: 4px;
+    margin-left: -54px;
+}
+
+input::placeholder {
+    color: #238DC1 !important;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    background-image: url('img/search.svg');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-size: 16px 16px;
+}
+.open-data-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-beige, #EEEAE1);
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+}
+.open-data-text{
+    color: var(--White, var(--White, #FFF));
+    text-align: center;
+    font-family: Helvetica Neue LT Arabic;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.open-data-shar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+.open-data-bg{
+    background-color: #005487;
+    padding-left: -12px;
+    margin-right: 44px;
+    width: 82%;
+    position: relative;
+    top: -24px;
+    height: 73px;
+}
+#morebutton {
+    margin-top: 4px;
+    margin-right: -6px !important;
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    border-radius: 21px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {}
+
+/* Phone styles */
+@media (max-width: 767px) {
+    .data-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-section {
+        padding: 20px;
+        border-radius: 0;
+        margin: 0;
+        display: contents;
+    }
+
+    .data-col-12 {
+        padding-right: auto;
+    }
+
+    .percentage-1 {
+        position: relative;
+        left: -48px;
+        width: auto;
+    }
+
+    .percentage-2 {
+        position: relative;
+        left: 25px;
+    }
+
+    .data-number {
+        position: absolute;
+    }
+
+    .data-col {
+        display: block;
+        position: absolute;
+        right: 184px;
+    }
+
+    .data-small {
+        position: relative;
+        top: -145px;
+        right: 32%;
+    }
+
+    .name-small {
+        position: relative;
+        top: 363%;
+        left: 16%;
+    }
+
+    .name-middle {
+        right: 16%;
+        position: relative;
+    }
+
+    .data-m {
+        position: relative;
+        top: -21px;
+    }
+
+    .rounded-corners {
+        top: 28px;
+        position: relative;
+    }
+
+    .company-number {
+        position: absolute;
+        padding-top: 7px;
+    }
+
+    .company-title {
+        margin-top: 45px;
+    }
+
+}
+
+@media (max-width: 500px) {}

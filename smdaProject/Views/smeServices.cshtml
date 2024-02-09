@@ -1,0 +1,45 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.SmeServices>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models.Blocks;
+@using Umbraco.Cms.Core.Models
+@{
+    Layout = "masterAbout.cshtml";
+}
+
+<section class="services-diraction">
+    <div class="container">
+        <h6 class="d-flex justify-content-center mb-3 services-title">@Umbraco.GetDictionaryValue("Authority services")</h6>
+        <div class="d-flex justify-content-center position-absolute dot-services">
+            <div class="d-flex flex-row bd-highlight mb-auto d-flex justify-content-center">
+                <div class="p-2 bd-highlight">
+                    <img src="img/Dot.svg" alt="">
+                </div>
+                <div class="p-2 bd-highlight">
+                    <img src="img/Dot.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container card border-card-services mb-5">
+            @foreach (var smeservice in Model.Value<IEnumerable<BlockListItem>>("smeservice"))
+            {
+                var content = smeservice.Content;
+                var typedMultiMediaPicker = content.Value<MediaWithCrops>("serviceimg");
+                
+                <div class="col">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div class="w-auto">
+                            <img class="rounded img-fluid d-block w-auto fit-cover" style="height: 70%;" src="@typedMultiMediaPicker.MediaUrl()">
+                        </div>
+                        <div class="py-4 py-lg-0 px-lg-4">
+                            <a href="h.html">
+                                <h4 class="main-title">@content.Value("servicename")</h4>
+                            </a>
+                            <p class="text-services">@content.Value("servicedesc")</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

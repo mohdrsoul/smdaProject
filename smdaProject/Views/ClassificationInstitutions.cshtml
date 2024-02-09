@@ -1,0 +1,115 @@
+﻿
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+	Layout = "masterAbout.cshtml";
+	var about = Umbraco.Content(1125);
+	 var home = Umbraco.Content(1100);
+
+}
+
+  <section class=" ">
+        <div class="container">
+            <div class="d-flex flex-row bd-highlight mb-3  position-absolute">
+                <div class="p-3 bd-highlight ">
+                    <img src="img/share.svg" class="cursor" alt="" >
+                </div>
+                <div class="p-3 bd-highlight">
+                    <img src="img/printer.svg" class="cursor" alt="" >
+                </div>
+            </div>
+            <h5 class="card-title d-flex justify-content-center mb-3 mt-3  title-community2">
+              @Model.Value("classificationOfSmallAndMediumEnterprises")
+                <div class="d-flex justify-content-center position-absolute dot-pic3">
+                    <div class="d-flex flex-row bd-highlight mb-5 d-flex justify-content-center ">
+                        <div class="p-2 bd-highlight ">
+                            <img src="img/Dot.svg" alt="">
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <img src="img/Dot.svg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </h5>
+            <div class="card border-card m-20 mb-5">
+                <div class="card-body-text2 d-flex">
+                    <div class="container ">
+                        <div class="row justify-content-evenly">
+                            <div class="col-4">
+                                <img src="img/small-enterprises.svg" alt="" class="pic-Institutions">
+                            </div>
+                            <div class="col-4">
+                                <img src="img/small-enterprises2.svg" alt="" class="pic-Institutions">
+                            </div>
+                            <div class="col-4">
+                                <img src="img/small-enterprises3.svg" alt="" class="pic-Institutions">
+                            </div>
+                        </div>
+                        <div class="row justify-content-end contant-margin">
+                            <div class="col-3  rounded-3 worker-num" style="width: auto;">
+                               @Umbraco.GetDictionaryValue("Number of employees") <img src="assets/img/people.svg" alt="">
+                            </div>
+                            <div class="col-3 small-company">
+                              @Model.Value("minorWorkers")
+                            </div>
+                            <div class="col-3 small-company2">
+                               @Model.Value("smallWorkers")
+                            </div>
+                            <div class="col-3 small-company6">
+                               @Model.Value("mediumWorkers")
+                            </div>
+                        </div>
+                        <div class="row justify-content-end mt-4">
+                            <div class="col-3 rounded-3 income" style="width: auto;">
+                                الدخل السنوي
+                                <img src="assets/img/banknotes.svg" alt="">
+                            </div>
+                            <div class="col-3 small-company4">
+                              @Model.Value("annualIncomeOfMinro")
+                            </div>
+                            <div class="col-3 small-company3">
+                             @Model.Value("annualIncomeOfMedium")
+                            </div>
+                            <div class="col-3 small-company5">
+                            @Model.Value("annualIncomeOfMedium")
+                            </div>
+                        </div>
+                        <h6 class="mb-4 mt-4 rounded-3 data-know" >
+                        @Umbraco.GetDictionaryValue("To know your organization's data, enter your information:")
+                        </h6>
+                        <form class="row form-info" style="margin-right: -27%;">
+                            <div class="col-md-3 d-flex w-auto">
+                                <label for="inputtext4" class="label">@Umbraco.GetDictionaryValue("Number of employees") </label>
+                                <input type="text" class="form-control rounded-pill" id="inputText1"
+                                    placeholder="ادخل عدد العاملين">
+                            </div>
+                            <div class="col-md-3 d-flex w-auto">
+                                <label for="inputtext4" class="label">@Umbraco.GetDictionaryValue("The annual income") </label>
+                                <input type="text" class="form-control rounded-pill" id="inputText2"
+                                    placeholder="ادخل الدخل السنوي">
+                            </div>
+                            <div class="col-3 submit">
+                                <button type="submit" class="button-61">@Umbraco.GetDictionaryValue("Show results")  <i
+                                        class="fa-solid fa-arrow-right fa-flip-horizontal arrow"
+                                        style="color: #ffffff;"></i></button>
+                            </div>
+                        </form>
+                        <div class="d-flex flex-row bd-highlight mb-3 mt-2 know-more">
+                            <div class="p-2 bd-highlight">
+                                <p class="about-your">
+                            @Umbraco.GetDictionaryValue("Your organization is considered a small enterprise")   
+                            </p>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button type="" class="button-61">@Umbraco.GetDictionaryValue("see more")  <i
+                                    class="fa-solid fa-arrow-right fa-flip-horizontal arrow"
+                                    style="color: #ffffff;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>    

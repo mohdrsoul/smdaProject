@@ -1,0 +1,311 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.About>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models.Blocks;
+@using Umbraco.Cms.Core.Models;
+@{
+    Layout = "masterAbout.cshtml";
+     var about = Umbraco.Content(1125);
+	 var home = Umbraco.Content(1100);
+
+}
+
+
+     <section>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12 palovit-title mt-3">
+                    <h3 class="sme-title title"> @Umbraco.GetDictionaryValue("About the Authority")
+                        <div class="position-absolute dot-sme">
+                            <div class="flex-row bd-highlight mb-5 d-flex justify-content-center">
+                                <div class="p-2 bd-highlight ">
+                                    <img src="img/Dot.svg" alt="" style="height: 70%;">
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <img src="img/Dot.svg" alt="" style="height: 70%;">
+                                </div>
+
+                            </div>
+                        </div>
+                    </h3>
+                    <ul class="sme-button col-12">
+                        <li data-filter=".item1">
+                            <button type="button" class="button-66 title ">@Umbraco.GetDictionaryValue("From the Semitic pronunciation") </button>
+                        </li>
+                        <li data-filter=".item2">
+                            <button type="button" class="button-66 title"> @Umbraco.GetDictionaryValue("Speech of His Excellency the Chairman of the Authority")</button>
+                        </li>
+                        <li data-filter=".item3">
+                            <button type="button" class="button-66 title"> @Umbraco.GetDictionaryValue("Authority’s powers")</button>
+                        </li>
+                        <li data-filter=".item4">
+                            <button type="button" class="button-66 title">@Umbraco.GetDictionaryValue("Our vision, our mission, our values")   </button>
+                        </li>
+
+                    </ul>
+                </div>
+                    <div class="row title">
+                       <div class="col-12 item1" id="section1">
+                        <div class="container">
+                            <div class="img-container">
+                                <img src="@Model.Value("sultanImg")" alt="Snow" class="sultan-img">
+                                <div class="text-overlay">
+                                    <p class="sultan-text title">
+                                       @Model.Value("sultanText")"
+                                        <span class="d-flex d-inline-block mt-3">
+                                          @Model.Value("sultanNameText")
+                                          <br>
+                                          @Model.Value("sultanDate")
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="container item2" id="section2">
+                        <div class="row mb-4 d-flex justify-content-between border-about-box">
+                            <div class="bd-highlight mb-3 dot-bg">
+                                <div class="p-2 bd-highlight dot-bg2">
+                                    <img src="img/Dot.svg" alt="">
+                                </div>
+                                <div class="p-2 bd-highlight dot-bg">
+                                    <img src="img/Dot.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <div class="card-body">
+                                    <p class="card-text about title">
+                                       @Model.Value("speechOfHead")
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 img-card">
+                             <img src="@Model.Value("imageOfHead")" alt="Snow" class="img-fluid rounded-start ml-auto p-0 halima-pic" alt="..." width="280px">
+                                <p class="halima-name title">@Model.Value("nameOfHead")
+                                    <span class="posaition-name">
+                                @Model.Value("jobDesc")
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="container col-12 item3" id="section3">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <h3 class="title-sec3  royal-decree-title"> @Model.Value("withinRoyalDecreeNo") </h3>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center flex-row ">
+                            <div class="d-flex justify-content-center flex-row mb-3">
+                                <div class="p-2 bd-highlight">
+                                    <button class="button-60 title" type="button" id="button1"> @Model.Value("inOtherSpecialties")</button>
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <button class="button-60 title" type="button" id="button2">@Model.Value("opportunities")</button>
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <button class="button-60 title" type="button" id="button3">@Model.Value("plansAndInitiatives") </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            
+                            <div class="carousel-inner">
+                                <!-- Carousel Item 1 -->
+                                <div class="carousel-item active " id="carousel-item-1">
+                                    <div class="row justify-content-center">
+                                        
+                                        @{
+                                            var planBlocks = Model.Value<IEnumerable<BlockListItem>>("plans");
+                                          }
+
+                                        @foreach (var planBlock in planBlocks)
+                                            {
+                                         var content = planBlock.Content;
+                                         var typedMultiMediaPicker = content.Value<MediaWithCrops>("imageicon");
+                                            //var icon = typedMultiMediaPicker.FirstOrDefault();
+                                            <div class="col">
+                                            <div class="card-sme">
+                                                <img src="@typedMultiMediaPicker.MediaUrl()" class="card-img-top" alt="Plan Image">
+                                                <div class="card-body">
+                                                    <p class="card-text-content title">
+                                                        @content.Value("planText")
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            }
+                                      </div>
+                                </div>
+                                <!-- Carousel Item 2 -->
+                                <div class="carousel-item" id="carousel-item-2">
+                                       <div class="row justify-content-center">
+                                        
+                                        @{
+                                            var OpportunityBlocks = Model.Value<IEnumerable<BlockListItem>>("opportunity");
+                                          }
+
+                                        @foreach (var OpportunityBlock in OpportunityBlocks)
+                                            {
+                                         var content = OpportunityBlock.Content;
+                                            var typedMultiMediaPicker = content.Value<MediaWithCrops>("imageicon");
+                                            //var icon = typedMultiMediaPicker.FirstOrDefault();
+                                            <div class="col">
+                                            <div class="card-sme">
+                                                <img src="@typedMultiMediaPicker.MediaUrl()" class="card-img-top" alt="Plan Image">
+                                                <div class="card-body">
+                                                     <p class="card-text-content title">
+                                                        @content.Value("planText");
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            }
+                                      </div>
+                                </div>
+                                <!-- Carousel Item 3 -->
+                                <div class="carousel-item" id="carousel-item-3">
+                                  <div class="row justify-content-center">
+                                        @{
+                                            var others = Model.Value<IEnumerable<BlockListItem>>("other");
+                                          }
+                                        @foreach (var other in others)
+                                            {
+                                         var content = other.Content;
+                                            var typedMultiMediaPicker = content.Value<MediaWithCrops>("imageicon");
+                                            //var icon = typedMultiMediaPicker.FirstOrDefault();
+                                            <div class="col">
+                                            <div class="card-sme">
+                                                <img src="@typedMultiMediaPicker.MediaUrl()" class="card-img-top" alt="Plan Image">
+                                                <div class="card-body">
+                                                     <p class="card-text-content title">
+                                                        @content.Value("planText");
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            }
+                                      </div>
+                                </div>
+                            </div>
+                           <button class="carousel-control-prev carousel-control-prev-sme" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon carousel-control-prev-icon-sme"
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon carousel-control-next-icon-sme"
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                     <!-- section 4 -->
+                      <div class="col-md-4  item item4 " id="section4">
+                        <div class=" card-ourvision">
+                            <div class="card-body ">
+                                <div class="container">
+                                    <div class="row justify-content-between">
+                                        <div class="col-6">
+                                            <div class=" mb-3" style="width: auto;">
+                                                <div class="row g-0">
+                                                    <div class="col-md-8">
+                                                        <div class="card-body mb-2">
+                                                            <h5 class="card-title">@Umbraco.GetDictionaryValue("Our message")</h5>
+                                                            <p class="card-text-2">
+                                                                أن دعم وتمكين المؤسسات الصغرى
+                                                                والصغيرة والمتوسطة للنمو والتوسع ورفع قدراتها
+                                                                التنافسية
+                                                                من خلال برامج مبتكرة ومستدامة بهدف تنمية الفرد
+                                                                والمجتمع
+                                                                وتنويع مصادر الدخل ورفع مساهمتها في الناتج المحلي
+                                                                الإجمالي.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mt-4 ">
+                                                        <div class="card-img card-img2" >
+                                                            <img src="img/Frame2.svg" class="card-top-img2" alt="...">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class=" mb-3 w-auto">
+                                                <div class="row g-0">
+                                                    <div class="col-md-8">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">@Umbraco.GetDictionaryValue("Our vision")</h5>
+                                                            <p class="card-text-2">
+                                                                أن يكون قطاع المؤسسات الصغرى والصغيرة والمتوسطة
+                                                                اللبنة الأساسية
+                                                                في منظومة الاقتصاد الوطني لتعزيز التنمية المستدامة.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mt-4 vision-img">
+                                                        <div class="card-img card-img2">
+                                                            <img src="img/Frame2.svg" class="card-top-img2" alt="...">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-5 vision-message">
+                                        <div class="col">
+                                            <div class="card-img" style="width: 9rem;">
+                                                <img src="img/Frame2.svg" class="card-top-img" alt="...">
+                                                <div class="card-body card-body2" >
+                                                  <p class="card-text">@Umbraco.GetDictionaryValue("honesty")</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-img" style="width: 9rem;">
+                                                <img src="img/Frame2.svg" class="card-top-img" alt="...">
+                                                <div class="card-body card-body2" >
+                                                  <p class="card-text">@Umbraco.GetDictionaryValue("integration")</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-img" style="width: 9rem;">
+                                                <img src="img/Frame2.svg" class="card-top-img" alt="...">
+                                                <div class="card-body card-body2" >
+                                                  <p class="card-text">@Umbraco.GetDictionaryValue("growth")</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-img" style="width: 9rem;">
+                                                <img src="img/Frame2.svg" class="card-top-img" alt="...">
+                                                <div class="card-body card-body2" >
+                                                  <p class="card-text">@Umbraco.GetDictionaryValue("Innovation")</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col vision">
+                                            <h5 class="card-title-2">@Umbraco.GetDictionaryValue("our values")</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    </div>
+         
+         
+      
+    </section>

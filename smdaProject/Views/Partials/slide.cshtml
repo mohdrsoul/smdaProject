@@ -1,0 +1,27 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models.Blocks;
+@using Umbraco.Cms.Core.Models;
+
+
+
+ <div class="slider">
+                <div class="slide-track">
+        @{
+            var Homecontent = Umbraco.Content(1100);
+            var blocks = Homecontent.Value<IEnumerable<BlockListItem>>("slide");
+                        foreach (var block in blocks)
+                        {
+                            var content = block.Content;
+                            var typedMultiMediaPicker = content.Value<IEnumerable<MediaWithCrops>>("slide");
+                            foreach (var entry in typedMultiMediaPicker)
+                            {
+                                <div class="slide">
+                                    <img src="@entry.MediaUrl()" height="60" width="auto" alt="" />
+                                </div>
+                            }
+                        }
+                    }
+                </div>
+            </div>

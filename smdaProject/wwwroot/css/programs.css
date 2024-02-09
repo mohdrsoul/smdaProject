@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue+LT+Arabic:700');
+
+body {
+    font-family: 'Helvetica Neue LT Arabic', sans-serif;
+}
+/* تعيين خلفية للقسم الأول */
+#section1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #f0f0f0;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+/* تصميم العناصر داخل القسم الأول */
+#section1 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#section1 .icons {
+    display: flex;
+    justify-content: center;
+}
+#section1 .icon {
+    font-size: 30px;
+    margin: 0 20px;
+    color: #3498db;
+    text-align: center;
+}
+/* تصميم القسم الثاني والقسم الثالث */
+#section2,
+#section3 {
+    color: #fff;
+    /* لون النص على الخلفية */
+}
+/* تصميم خلفية القسم الثاني والقسم الثالث */
+#section2 {
+    padding-top: 10px;
+    text-align: right;
+    padding-right: 0px;
+    background-color: rgba(35, 141, 193, 1);
+}
+#section3 {
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgba(220, 207, 170, 1);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+.dropdown-menu {
+    text-align: right;
+    font-size: 16px;
+}
+
+.dropdown-menu li {
+    background-color: white;
+    border-bottom: 1px solid #EEEAE1;
+}
+.dropdown-menu a {
+    color: #004876;
+}
+/* تصميم العناصر داخل القسم الأول */
+#section1 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#section1 .icons {
+    display: flex;
+    justify-content: center;
+}
+#section1 .icon {
+    font-size: 30px;
+    margin: 0 20px;
+    color: #3498db;
+    text-align: center;
+}
+
+
+/* تصميم شريط الشركاء */
+#partners {
+    background-color: #ffffff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+ /* Style the placeholder text */
+ input::placeholder {
+    color: #C3D5ED !important;
+    font-size: 16px;
+}
+input[type="text"] {
+    background-image: url('img/search.svg');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-size: 16px 16px;
+}
+.ms-n5 {
+    margin-left: -40px;
+}
+.round-link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    /* White background */
+    color: #004876;
+    /*  text color */
+    text-decoration: none;
+    /* Remove underlines for links */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Customize the circle link buttons */
+.circle-link-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Add different sizes for each circle */
+.small-circle {
+    font-size: 24px;
+}
+
+.medium-circle {
+    font-size: 36px;
+}
+
+.large-circle {
+    font-size: 48px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon3 {
+    margin-top: 23%;
+    margin-right: -80px !important;
+    display: block;
+    position: absolute;
+    text-decoration: none;
+}
+.data-know-title{
+    margin-top: 100px;
+    color: #1493B7;
+
+}
+.programs-contan{
+    margin-top: 50px;
+    padding-right: 80px;
+    text-align: right;
+}
+.programs-contan2{
+    margin-top: 20px; 
+    padding-right: 80px;
+    text-align: right;
+}
+.program-title{
+    position: relative; 
+    right: 8%;
+}
+.programs-icone{
+    margin-top: 25px;
+    margin-right: 28px !important;
+    display: flex;
+    position: absolute;
+    gap: 6px;
+}
+.our-service2 {
+    margin-top: 80px;
+}
+
+/*  footer start */
+footer {
+    background-image: url('footer_background.jpg');
+    /* خلفية الفوتر */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #333;
+    /* لون الخفية إذا فشل تحميل الصورة */
+    color: #fff;
+    /* لون النص على الخلفية */
+
+}
+
+.logo {
+    height: 40px;
+    width: 160px;
+    margin-top: 30px;
+}
+
+.vision {
+    height: 80px;
+    width: 130px;
+    margin-top: -4px;
+    margin-right: -13px;
+}
+/*  footer end */

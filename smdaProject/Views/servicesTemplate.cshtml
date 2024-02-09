@@ -1,0 +1,196 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ServicesTemplate>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "masterAbout.cshtml";
+}
+
+ <section class="" style="direction: rtl;">
+        <div class="container py-1 ">
+            <div class="row">
+                <div class="col-md-4 offset-md-4 p-3 services-type-title">خدمات بطاقة ريادة الأعمال</div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-6">
+                    <p class="bg-services-title p-1">
+                        خدمات بطاقة ريادة الأعمال<br>
+                        (طلب/تجديد بطاقة ريادة الأعمال - طلب رفع الالتزام - إلغاء بطاقة ريادة)
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <a href="" target="_blank">
+                        <img src="img/printer.svg" alt="" class="ms-4">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="img/share.svg" alt="" class="ms-4">
+                    </a>
+                    <a href="">
+                        <button type="button" class="button-66 mt-2">ابدأ الخدمة
+                            <i class="fa-solid fa-arrow-right fa-flip-horizontal arrow" style="color: #ffffff;">
+                            </i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 col-md-3">
+                    <div class="list-group">
+                        <button type="button" class="list-group-item list-group-item-action"
+                            onclick="toggleCardVisibility('cardContainer')">وصف الخدمة</button>
+                        <button type="button" class="list-group-item list-group-item-action"
+                            onclick="toggleCardVisibility('card2')">المستندات المطلوبة</button>
+                        <button type="button" class="list-group-item list-group-item-action"
+                            onclick="toggleCardVisibility('card3')">الشروط</button>
+                        <button type="button" class="list-group-item list-group-item-action"
+                            onclick="toggleCardVisibility('card4')">الإجراءات</button>
+                        <button type="button" class="list-group-item list-group-item-action"
+                            onclick="toggleCardVisibility('card5')">الفترة الزمنية والرسوم</button>
+                        <button type="button" class="list-group-item list-group-item-action"
+                            onclick="toggleCardVisibility('card6')">الفئة المستهدفة</button>
+                        <button type="button" class="list-group-item list-group-item-action"
+                            onclick="toggleCardVisibility('card7')">تأكد من استحقاقك لبطاقة ريادة</button>
+                    </div>
+                </div>
+                <div class="col-sm-5 offset-sm-2 col-md-8 offset-md-0 mb-3">
+                    <div class="col" id="cardContainer" style="display: block;">
+                        <div class="card card-discraption">
+                            <div class="card-body ">
+                                <p class="card-text  p-text-body">
+                                    بطاقة ريادة الأعمال الصادرة من هيئة تنمية
+                                    المؤسسات الصغيرة والمتوسطة مستندا يمكن لحاملها
+                                    الحصول على العديد من التسهيلات في مختلف القطاعات من
+                                    الجهات ذات العلاقة. وترتكز أهم أهدافها في مساندة
+                                    المؤسسات الصغيرة والمتوسطة من خلال توفير مجموعة
+                                    من الامتيازات من قبل بعض الجهات الحكومية والخاصة.
+                                </p>
+                                <p class="Categories-text">
+                                    5 فئات يحق لها الحصول على بطاقة ريادة الأعمال:
+                                </p>
+                                <ol>
+                                    <li>أن يكون المالك عماني الجنسية متفرغا لإدارة مؤسسته</li>
+                                    <li>لمؤسسة التي بها شريك خليجي ، على أن لاتقل نسبة الشريك أو الشركاء العمانيين عن
+                                        30% ويشترط تفرغ شريك عماني واحد على الأقل</li>
+                                    <li>أن يكون المالك عماني الجنسية شريطة تفرغ واحد على الأقل لإدارة المؤسسة دون تحديد
+                                        نسبة الشخص المالك</li>
+                                    <li>المؤسسات المملوكة من قبل الموظفين الحكوميين المستفيدين من قرار وزارة العمل رقم
+                                        2016/2 بشأن الضوابط الخاصة بالسماح لموظفي الحكومة بالتفرغ لإنشاء إدارة مؤسساتهم
+                                        الخاصة وذلك من خلال الاستفادة من القرار فقط</li>
+                                    <li>الشركات الناشئة القائمة على التقنية والابتكار وفقا لما يتم اعتماده من قبل الجهات
+                                        ذات الاختصاص على أن يكون على الأقل أحد الملاك عماني الجنسية</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-discraption" id="card2" style="width: auto; display: none;">
+                            <div class="card-body">
+                                <ul>
+                                    <li>إرفاق إثبات ورقة التأمينات الاجتماعية للمتفرغين أصحاب المؤسسات الصغيرة و
+                                        المتوسطة ( ويستثنى من ذلك المتقاعدين)</li>
+                                    <li>إرفاق إثبات التفرغ في حال التفرغ من القطاع الحكومي</li>
+                                    <li>السجل التجاري</li>
+                                    <li>للمتقاعدين يتطلب إرفاق إثبات التقاعد.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-discraption" id="card3" style="width: auto; display: none;">
+                            <div class="card-body">
+                                <ol>
+                                    <li>أن يكون مالك المؤسسة عمانياً متفرغاً ومسجلا لدى وزارة العمل كصاحب عمل وذلك
+                                        بالنسبة لفئات البطاقة التي يشترط فيها تفرغ الشركاء</li>
+                                    <li>أن يكون مالك المؤسسة مؤمنا عليه في أحد أنظمة التقاعد أو التأمينات الاجتماعية لدى
+                                        جهات الاختصاص، ويُستثنى من ذلك المتقاعدون أو من تجاوزت أعمارهم (60) ستين عاما
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-discraption" id="card4" style="width: au; display: none;">
+                            <div class="card-body">
+                                <ol>
+                                    <li>يتقدم رائد العمل عبر الموقع الإلكتروني للهيئة بطلب إصدار / تجديد / إلغاء بطاقة
+                                        ريادة الأعمال</li>
+                                    <li>في حال طلب إصدار / تجديد البطاقة يتم الطلب بدفع رسوم المترتبة عن الخدمة المطلوبة
+                                    </li>
+                                    <li>يقوم النظام بإرسال رسالة نصية يوجد بها رابط لتحميل البطاقة</li>
+                                    <li>في حال طلب إلغاء البطاقة يتم تقديم ما يثبت عدم الاستفادة من التسهيلات والمحفزات
+                                        والمميزات لبطاقة ريادة الأعمال وفقا إلى لائحة تسجيل المؤسسات الصغرى والصغيرة
+                                        والمتوسطة وإصدار بطاقة ريادة الأعمال</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-discraption" id="card5" style="width: auto; display: none;">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="d-flex justify-content-start">
+                                        <div class="p-2 bd-highlight">
+                                            <img src="img/clock.svg" alt="">
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <p class="title-details">الفترة الزمنية لإتمام المهمة</p>
+                                            <p class="details">يوم عمل واحد</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-start">
+                                        <div class="p-2 bd-highlight">
+                                            <img src="img/price.svg" alt="">
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <p class="title-details">الرسوم</p>
+                                            <p class="details">5 ريالات عمانية/ 12 شهر للإصدار و التجديد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-discraption" id="card6" style="width: auto; display: none;">
+                            <div class="card-body">
+                                <ol>
+                                    <li>المتقاعدين</li>
+                                    <li>المستفيدين من قرار التفرغ الحكومي</li>
+                                    <li>أصحاب المؤسسات الصغيرة و المتوسطة المتفرغين لإدارة أعمالهم و المسجلين في الهيئة
+                                        العامة للتأمينات الاجتماعية</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-discraption" id="card7" style="width: auto; display: none;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-start">
+                                    <div class="p-2 bd-highlight">
+                                        <p class="Commercial-Record">السجل التجاري</p>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <input class="form-control" type="text" placeholder="ادخل رقم السجل التجاري"
+                                            aria-label="default input example">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start">
+                                    <div class="p-2 bd-highlight">
+                                        <p class="id-number"> رقم البطاقة الشخصية</p>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <input class="form-control" type="text" placeholder="ادخل رقم البطاقة"
+                                            aria-label="default input example">
+                                    </div>
+                                </div>
+                                <h5 class="p-2 title-reasons ">للآسف لا تعتبر من مستحقي بطاقة ريادة لهذه الأسباب:</h5>
+                                <ul>
+                                    <li>سبب 1</li>
+                                    <li>سبب 2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
