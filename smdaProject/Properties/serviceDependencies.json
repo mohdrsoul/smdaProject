@@ -7,6 +7,9 @@
     "identityapp1": {
       "ignored": "true",
       "type": "identityapp"
+    },
+    "CustomConnector": {
+      "type": "powerplatform"
     }
   }
 }

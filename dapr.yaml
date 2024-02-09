@@ -1,0 +1,13 @@
+apps:
+- appDirPath: smdaProject.AppHost
+  appID: smdaproject-apphost
+  command:
+  - dotnet
+  - run
+- appDirPath: smdaProject
+  appID: smdaproject
+  appPort: 43186
+  command:
+  - dotnet
+  - run
+version: 1

@@ -3,6 +3,13 @@
     "appInsights1": {
       "type": "appInsights.sdk",
       "dynamicId": null
+    },
+    "CustomConnector": {
+      "connectionInfo": "Custom Connector: smdaProject_Connector (Environment: PowerPagesDeveloper-011424-081348)",
+      "connectorName": "smdaProject_Connector",
+      "environmentUrl": "https://org50aa1057.crm4.dynamics.com/",
+      "environmentId": "aa070f55-a3f2-eb36-816a-4a28402fdf49",
+      "type": "powerplatform.local"
     }
   }
 }
